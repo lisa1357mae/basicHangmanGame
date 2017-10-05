@@ -1,0 +1,38 @@
+
+
+* {
+  text-align: center;
+
+}
+
+body {
+  background-color: #5b76a3
+}
+
+h1 {
+  font-style: italic;
+  color: #5b76a3
+  text: center;
+  font-size: 90px;
+
+}
+
+
+p {
+  font-size: 30px;
+}
+
+.stickman {
+float: right;
+text-align: center;
+}
+
+
+.imgWin  {
+
+
+}
+
+.imgLost {
+
+}
