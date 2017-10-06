@@ -46,12 +46,12 @@ if (correctGuess === false) {
 //show answers to tell the player if the won or lost
 if (remainingGuesses>0 ) {
   alert(answerArray.join(" "));
-  alert("You Win! The answer was " + word);
+  alert("YAY! You WIN! The answer was " + word);
 changeImage(false);
 }
 
 else {
-  alert("You're Dead!!!! It was " + word);
+  alert("You're DEAD!!!! HANGMAN!!!! The answer was " + word);
 changeImage(true);
 }
 
