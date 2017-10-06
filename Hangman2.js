@@ -1,35 +1,15 @@
 
 
-  // OnClick Function
-   check = function () {
-    list.onclick = function () {
-      var guess = (this.innerHTML);
-      this.setAttribute("class", "active");
-      this.onclick = null;
-      for (var i = 0; i < word.length; i++) {
-        if (word[i] === guess) {
-          guesses[i].innerHTML = guesses;
-          counter += 1;
-        }
-      }
-      var j = (word.indexOf(guess));
-      if (j === -1) {
-        lives -= 1;
-        comments();
-        animate();
-      } else {
-        comments();
-      }
-    }
-  }
 
-
-var words = ["cat", "monkey", "snake", "horse", "fox", "zebra"];
+//set animal array
+var words = ["cat", "monkey", "panda", "horse", "fox", "zebra"];
 var word = words[Math.floor(Math.random() * words.length)];
 var answerArray = [];
 for (var i = 0; i < word.length; i++) {
 answerArray[i] = "_";
 }
+
+
 var remainingLetters = word.length;
 
 var remainingGuesses = 6;
@@ -37,7 +17,7 @@ var correctGuess;
 
 
 while (remainingLetters > 0 && remainingGuesses > 0 ) {
-//Game code goes here
+
 //Show the player their progress
 alert(answerArray.join(" "));
 //Take input from the player
